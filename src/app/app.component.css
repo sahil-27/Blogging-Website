@@ -1,0 +1,11 @@
+main {
+	margin-top: 1rem;
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.footer {
+	min-height: 50px;
+	background-color: rgb(29, 218, 236);
+}
+

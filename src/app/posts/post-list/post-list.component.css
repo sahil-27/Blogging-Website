@@ -1,0 +1,37 @@
+:host {
+	display: block;
+	margin-top: 1 rem;
+}
+.info-text {
+	margin-top: 3%;
+	text-align: center;
+	color: rgb(193, 193, 193);
+}
+mat-spinner {
+	margin: 0 auto;
+}
+
+mat-paginator {
+	margin-top: 1rem;
+}
+
+.post-image {
+	width: 100%;
+	height: auto;
+}
+
+.post-image img {
+	width: 100%;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.action-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+mat-dialog-container {
+  background: pink !important;
+  padding: 20px;
+  border-radius: 10px;
+}

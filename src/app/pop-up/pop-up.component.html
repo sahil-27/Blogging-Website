@@ -1,0 +1,43 @@
+<div class="popup-content">
+	<div class="slide-1">
+		<h2>
+			<span [innerHTML]="animatedText"></span>
+			<span *ngIf="showCursor" class="cursor">|</span>
+		</h2>
+
+		<div *ngIf="showOptions" class="image-options">
+			<img *ngFor="let option of slides[currentSlideIndex].options" [src]="option.imgSrc" [alt]="option.alt"
+				(click)="onOptionClick(option.nextSlide)" class="option-image">
+		</div>
+
+		<div *ngIf="showImg">
+			<img [src]="slides[currentSlideIndex].imgSrc" class="gif">
+		</div>
+
+		<div style="text-align: center; margin-top: 20px;" *ngIf="showSlider">
+			<!-- Slider -->
+			<input type="range" min="0" max="100" step="1" [(ngModel)]="sliderValue" (input)="updateEmoji()"
+				style="width: 300px; margin-bottom: 4%;">
+
+			<!-- Emoji Display -->
+			<div style="margin-top: 5%; font-size: 60px;">
+				{{ emoji }}
+			</div>
+		</div>
+
+		<div *ngIf="showVideo">
+			<video autoplay loop playsinline width="476" height="220">
+				<source [src]="slides[currentSlideIndex].video" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+
+		<button *ngIf="showNextButton && currentSlide < slides.length - 1" (click)="onNextClick()" class="next-btn">
+			Next
+		</button>
+
+		<button *ngIf="showClose" (click)="onClose()" class="next-btn">
+			Close
+		</button>
+	</div>
+</div>

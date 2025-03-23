@@ -1,0 +1,82 @@
+.popup-content h2 {
+  margin-top: 4%;
+  font-family: 'Courier New', monospace; /* Typewriter style font */
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.popup-content::-webkit-scrollbar {
+  display: none;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background-color: #e91e63;
+}
+
+.cursor {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  animation: blink 1s infinite;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.option-image {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 5px solid white ;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gif {
+	width: 300px;
+    height: 250px;
+    margin-left: 15%;	
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
