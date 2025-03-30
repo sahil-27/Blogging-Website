@@ -44,3 +44,15 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Ignore backend folder
+/backend
+
+# Ignore node modules
+/node_modules
+
+# Ignore build files
+/dist
+
+# Ignore environment variables
+.env
