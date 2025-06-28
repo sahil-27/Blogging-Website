@@ -10,3 +10,5 @@ router.post('/login', UserController.LoginUser);
 router.post('/logs', UserController.PostLogs);
 
 module.exports = router;
+
+// this is the user route file
